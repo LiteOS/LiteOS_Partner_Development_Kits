@@ -1,4 +1,4 @@
-# 中科创达ThunderSoft开发套件
+# 钛比科技terabits开发套件
 
 ### 关于我们
 
