@@ -1,6 +1,8 @@
 # LiteOS_Partner_Development_Kits
->The development kits are powered by Huawei LiteOS partners.
->Huawei LiteOS 合作伙伴们提供的开发套件。
+>The development kits are powered by Huawei LiteOS partners. If you need any help, please contact us by email liteos@huawei.com
+>
+>Huawei LiteOS 合作伙伴们提供的开发套件。如果你需要帮助，请给我们发邮件liteos@huawei.com。
+>
 
 ### 资源列表 the list of resources
 
@@ -10,4 +12,7 @@
 - [兆易创新GigaDevice开发套件](./LiteOS_GigaDevice_Development_Kit/兆易创新GigaDevice开发套件.md)
 - [钛比科技terabits开发套件](./LiteOS_terabits_Development_Kit/钛比科技terabits开发套件.md)
 - [物联网俱乐部IoTClub开发套件](./LiteOS_IoTClub_Development_Kit/物联网俱乐部IoTClub开发套件.md)
+- [亿琪软件yiqisoft开发套件](./LiteOS_yiqisoft_Development_Kit/亿琪软件yiqisoft开发套件.md)
+- [准捷电子LiteOne_OpenCPU开发套件](./LiteOS_fanconn_OpenCPU_Development_Kit/准捷电子fanconn_OpenCPU开发套件.md)
 - [鹏力科技NB476开发套件](./LiteOS_SZMaker_Development_Kit/鹏力科技NB476开发套件.md)
+
