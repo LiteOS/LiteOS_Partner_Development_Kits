@@ -14,5 +14,5 @@
 - [物联网俱乐部IoTClub开发套件](./LiteOS_IoTClub_Development_Kit/物联网俱乐部IoTClub开发套件.md)
 - [亿琪软件yiqisoft开发套件](./LiteOS_yiqisoft_Development_Kit/亿琪软件yiqisoft开发套件.md)
 - [准捷电子LiteOne_OpenCPU开发套件](./LiteOS_fanconn_OpenCPU_Development_Kit/准捷电子fanconn_OpenCPU开发套件.md)
-- [鹏力科技NB476开发套件](./LiteOS_SZMaker_Development_Kit/鹏力科技NB476开发套件.md)
+- [深创客NB476开发套件](./LiteOS_SZMaker_Development_Kit/深创客NB476开发套件.md)
 
